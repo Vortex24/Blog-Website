@@ -78,6 +78,6 @@ app.post("/compose", function(req, res){
     res.redirect("/");
 });
 
-app.listen(3000, function(req, res){
+app.listen(process.env.port || 3000, function(req, res){
     console.log("Running on port 3000...");
 });
